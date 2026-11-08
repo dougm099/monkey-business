@@ -25,17 +25,14 @@ img {
 }
 
 .brand {
-    display: flex;
-    align-items: center;
-    gap: 14px;
     margin-bottom: 18px;
 }
 
-.brand img {
-    width: 72px;
-    height: 72px;
-    object-fit: cover;
-    border-radius: 50%;
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .brand h1 {
@@ -49,27 +46,10 @@ img {
     color: #aaaaaa;
 }
 
-.main-nav {
-    display: flex;
-    gap: 26px;
-    flex-wrap: wrap;
-}
-
-.main-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.main-nav a:hover,
-.main-nav a:focus-visible,
-.main-nav a[aria-current="page"] {
-    color: #f5c400;
-}
-
 main {
-    width: min(1000px, calc(100% - 40px));
+    max-width: 1000px;
     margin: 0 auto;
+    padding: 40px 20px;
 }
 
 section {
@@ -97,8 +77,11 @@ section h3 {
 }
 
 .hero-logo {
-    width: min(440px, 90%);
+    width: min(420px, 90%);
+    height: auto;
     margin-bottom: 24px;
+
+    background: transparent;
 }
 
 .hero h2 {
@@ -307,6 +290,75 @@ th {
 .site-footer a {
     color: #f5c400;
     text-decoration: none;
+}
+/* Jungle-style top banner */
+.site-header,
+header {
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.78),
+            rgba(0, 0, 0, 0.88)
+        ),
+        repeating-linear-gradient(
+            135deg,
+            #132414 0px,
+            #132414 18px,
+            #1b2f1b 18px,
+            #1b2f1b 36px
+        );
+
+    padding: 30px 40px;
+    border-bottom: 4px solid #f5c400;
+    text-align: center;
+}
+
+.brand {
+    margin-bottom: 18px;
+}
+
+.brand h1,
+header h1 {
+    margin: 0;
+    color: #f5c400;
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow:
+        2px 2px 0 #000000,
+        0 0 10px rgba(245, 196, 0, 0.25);
+}
+
+.brand p,
+header p {
+    margin: 5px 0 20px;
+    color: #dddddd;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.main-nav a:hover,
+.main-nav a[aria-current="page"] {
+    background-color: #f5c400;
+    color: black;
+    border-color: #f5c400;
 }
 
 @media (max-width: 760px) {
