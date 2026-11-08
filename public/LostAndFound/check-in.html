@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check In | Monkey Business</title>
+    <link rel="stylesheet" href="../css/festival.css">
+</head>
+<body>
+    <header class="site-header"><div class="brand"><img src="../images/monkey-logo.png" alt="Monkey Business logo"><div><h1>Human Check-In</h1><p>Let your group know where you are</p></div></div><nav class="main-nav"><a href="lost-found.html">Lost &amp; Found Home</a><a href="find-item.html">Find Item</a><a href="report-item.html">Report Item</a><a href="find-person.html">Find Friend</a><a href="check-in.html" aria-current="page">Check In</a></nav></header>
+    <main>
+        <section><h2>Check In</h2><p>Lost your phone or got separated from your group? Leave your location and a short message.</p><form>
+            <div class="form-group"><label for="person-name">Your Name</label><input type="text" id="person-name" name="person_name" required></div>
+            <div class="form-group"><label for="location">Current Location</label><select id="location" name="location" required><option value="">Select Check-In Location</option><option>Chimp Chat</option><option>Banana Bench</option><option>Jungle Junction</option></select></div>
+            <div class="form-group"><label for="message">Message for Your Group</label><textarea id="message" name="message" rows="5" maxlength="250" placeholder="Example: I lost my phone. I'll wait here for Chris and Maya."></textarea></div>
+            <button type="submit">Check In</button>
+        </form></section>
+        <section><h2>Meetup Locations</h2><div class="map-container"><img src="../images/festival-map.png" alt="Monkey Business Festival map"></div></section>
+    </main>
+    <footer class="site-footer"><a href="lost-found.html">Back to Lost &amp; Found</a></footer>
+</body>
+</html>

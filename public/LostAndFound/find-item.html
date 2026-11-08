@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Item | Monkey Business</title>
+    <link rel="stylesheet" href="../css/festival.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand"><img src="../images/monkey-logo.png" alt="Monkey Business logo"><div><h1>Find My Item</h1><p>Monkey Business Lost &amp; Found</p></div></div>
+        <nav class="main-nav"><a href="lost-found.html">Lost &amp; Found Home</a><a href="find-item.html" aria-current="page">Find Item</a><a href="report-item.html">Report Item</a><a href="find-person.html">Find Friend</a><a href="check-in.html">Check In</a></nav>
+    </header>
+    <main>
+        <section>
+            <h2>Search Found Items</h2>
+            <form>
+                <div class="form-group"><label for="search">Search</label><input type="search" id="search" name="search" placeholder="Phone, wallet, bag..."></div>
+                <div class="form-group"><label for="category">Category</label><select id="category" name="category"><option value="">All Categories</option><option>Phone</option><option>Wallet</option><option>ID</option><option>Credit / Debit Card</option><option>Keys</option><option>Bag</option><option>Clothing</option><option>Other</option></select></div>
+                <div class="form-group"><label for="location">Found Location</label><select id="location" name="location"><option value="">Any Location</option><option>Chimp Chat</option><option>Banana Bench</option><option>Jungle Junction</option><option>The Cage</option><option>The Warehouse</option><option>Monkey Maze</option><option>Big Banana</option><option>Food Truck Alley</option></select></div>
+                <button type="submit">Search Items</button>
+            </form>
+            <div id="item-results" class="result-box"><p>Search results will appear here after the database is connected.</p></div>
+        </section>
+    </main>
+    <footer class="site-footer"><a href="lost-found.html">Back to Lost &amp; Found</a></footer>
+</body>
+</html>

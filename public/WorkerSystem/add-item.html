@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Add Found Item | Monkey Business</title><link rel="stylesheet" href="../css/festival.css"></head>
+<body><div class="worker-shell"><aside class="worker-sidebar"><h2>Monkey Business Staff</h2><nav><a href="worker-dashboard.html">Dashboard</a><a href="add-item.html" aria-current="page">Add Item</a><a href="manage-items.html">Manage Items</a><a href="manage-people.html">Human Check-Ins</a></nav></aside><main class="worker-main"><section><h2>Log Found Item</h2><form>
+<div class="form-group"><label for="category">Category</label><select id="category" name="category" required><option value="">Select Category</option><option>Phone</option><option>Wallet</option><option>ID</option><option>Credit / Debit Card</option><option>Keys</option><option>Bag</option><option>Clothing</option><option>Other</option></select></div>
+<div class="form-group"><label for="brand">Brand</label><input type="text" id="brand" name="brand"></div>
+<div class="form-group"><label for="color">Color</label><input type="text" id="color" name="color"></div>
+<div class="form-group"><label for="description">Description</label><textarea id="description" name="description" rows="5" required></textarea></div>
+<div class="form-group"><label for="location-found">Location Found</label><select id="location-found" name="location_found" required><option value="">Select Location</option><option>Chimp Chat</option><option>Banana Bench</option><option>Jungle Junction</option><option>The Cage</option><option>The Warehouse</option><option>Monkey Maze</option><option>Big Banana</option><option>Food Truck Alley</option></select></div>
+<div class="form-group"><label for="date-found">Date Found</label><input type="date" id="date-found" name="date_found" required></div>
+<button type="submit">Add Found Item</button></form></section></main></div></body></html>

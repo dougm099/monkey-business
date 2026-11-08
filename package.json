@@ -1,0 +1,12 @@
+{
+  "name": "monkey-business-festival",
+  "version": "1.0.0",
+  "description": "CSE 4050 Monkey Business Festival Lost and Found project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

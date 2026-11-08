@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Lost Item | Monkey Business</title>
+    <link rel="stylesheet" href="../css/festival.css">
+</head>
+<body>
+    <header class="site-header"><div class="brand"><img src="../images/monkey-logo.png" alt="Monkey Business logo"><div><h1>Report Lost Item</h1><p>Monkey Business Lost &amp; Found</p></div></div><nav class="main-nav"><a href="lost-found.html">Lost &amp; Found Home</a><a href="find-item.html">Find Item</a><a href="report-item.html" aria-current="page">Report Item</a><a href="find-person.html">Find Friend</a><a href="check-in.html">Check In</a></nav></header>
+    <main><section><h2>Tell Us What You Lost</h2><form>
+        <div class="form-group"><label for="name">Your Name</label><input id="name" name="name" type="text" required></div>
+        <div class="form-group"><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+        <div class="form-group"><label for="phone">Phone Number</label><input id="phone" name="phone" type="tel"></div>
+        <div class="form-group"><label for="category">Item Category</label><select id="category" name="category" required><option value="">Select Category</option><option>Phone</option><option>Wallet</option><option>ID</option><option>Credit / Debit Card</option><option>Keys</option><option>Bag</option><option>Clothing</option><option>Other</option></select></div>
+        <div class="form-group"><label for="description">Item Description</label><textarea id="description" name="description" rows="5" required></textarea></div>
+        <div class="form-group"><label for="last-location">Last Seen Location</label><input id="last-location" name="last_location" type="text"></div>
+        <div class="form-group"><label for="date-lost">Date Lost</label><input id="date-lost" name="date_lost" type="date"></div>
+        <button type="submit">Submit Lost Item Report</button>
+    </form></section></main>
+    <footer class="site-footer"><a href="lost-found.html">Back to Lost &amp; Found</a></footer>
+</body>
+</html>
